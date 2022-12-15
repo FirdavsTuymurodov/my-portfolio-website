@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blackcolor: #1e1f2b;
+  --darkblack: #000;
+  --greencolor: #2ba386;
+  --cyancolor: #cdfff3;
+  --whitecolor: #fff;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--blackcolor);
+  color: #fff;
+}
+
+nav {
+  height: 10vh;
+}
+
+.navbar {
+  max-width: 1250px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_nav {
+  display: flex;
+  gap: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background-color: var(--cyancolor);
+  color: var(--darkblack);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: var(--whitecolor);
+  opacity: 0.6;
+  margin-left: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.navbar ul a:hover {
+  opacity: 0.8;
+}
+
+.navbar > button {
+  padding: 10px 32px;
+  background-color: var(--greencolor);
+  border: none;
+  border-radius: 6px;
+  transition: 0.4s ease;
+}
+
+.navbar > button > a {
+  text-decoration: none;
+  color: var(--whitecolor);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar > button:hover {
+  opacity: 0.9;
+}
