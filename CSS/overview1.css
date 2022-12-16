@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+.active {
+  opacity: 0.9 !important;
+}
+
 nav {
   height: 10vh;
   padding: 65px 1rem 0;
