@@ -35,7 +35,7 @@ button {
   opacity: 1 !important;
 }
 
-.overview_section {
+.contact_section {
   background-color: var(--blackcolor);
   height: 100vh;
 }
@@ -120,5 +120,3 @@ nav {
 .navbar button:hover {
   opacity: 0.9;
 }
-
-

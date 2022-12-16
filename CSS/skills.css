@@ -35,8 +35,9 @@ button {
   opacity: 1 !important;
 }
 
-.overview_section {
+.skills_section {
   background-color: var(--blackcolor);
+  color: #fff;
   height: 100vh;
 }
 
@@ -120,5 +121,3 @@ nav {
 .navbar button:hover {
   opacity: 0.9;
 }
-
-
