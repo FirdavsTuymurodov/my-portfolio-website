@@ -19,6 +19,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -30,14 +34,16 @@ button {
 header {
   background-color: var(--blackcolor);
   color: #fff;
+  height: 100vh;
 }
 
 nav {
   height: 10vh;
+  padding: 65px 1rem 0;
 }
 
 .navbar {
-  max-width: 1250px;
+  max-width: 1100px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -82,7 +88,18 @@ nav {
   opacity: 0.8;
 }
 
-.navbar > button {
+.right_nav {
+  display: flex;
+  align-items: center;
+}
+
+.right_nav > i {
+  font-size: 24px;
+  margin-left: 12px;
+  display: none;
+}
+
+.navbar button {
   padding: 10px 32px;
   background-color: var(--greencolor);
   border: none;
@@ -90,13 +107,137 @@ nav {
   transition: 0.4s ease;
 }
 
-.navbar > button > a {
+.navbar button > a {
   text-decoration: none;
   color: var(--whitecolor);
   font-size: 16px;
   font-weight: 500;
 }
 
-.navbar > button:hover {
+.navbar button:hover {
   opacity: 0.9;
+}
+
+.header_container {
+  padding-left: 1rem;
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 500px 600px;
+  justify-content: space-between;
+}
+
+.left_header_container {
+  width: 100%;
+  padding: 65px 0 65px 1rem;
+  background-image: url(./images/Component\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left_header_container > h1:first-child {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  opacity: 0.9;
+}
+
+.left_header_container > h1:last-child {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.left_header_container > p {
+  font-size: 14px;
+  color: var(--whitecolor);
+  opacity: 0.8;
+  margin: 1.5rem 0 2rem;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.left_header_container > a {
+  text-decoration: none;
+  color: var(--whitecolor);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.left_header_container > a > i {
+  font-size: 12px;
+  background-color: rgba(211, 211, 211, 0.2);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  margin-left: 15px;
+  opacity: 0.8;
+}
+
+.about_me {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.nationality,
+.projects,
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nationality > p,
+.projects > p,
+.experience > p {
+  font-size: 12px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+.nationality > h3{
+  display: flex;
+  align-items: center;
+}
+
+.nationality img {
+  width: 20px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 5px;
+}
+
+.right_header_container {
+  background-image: url(./images/Component\ 1\ \(1\).png);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right_header_container{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .left_nav > ul {
+    display: none;
+  }
+
+  .right_nav > i {
+    display: block;
+  }
+
+  .header_container{
+    grid-template-columns: auto;
+  }
 }
